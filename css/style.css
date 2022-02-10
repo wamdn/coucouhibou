@@ -1,0 +1,500 @@
+/*//////////////////
+Base
+//////////////////*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1{
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+h2{
+	font-family: 'Pacifico', cursive;
+	color: #de6e1d;
+}
+h3{
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+}
+label{
+	font-style: italic;
+	font-size: 17px;
+	line-height: 26px;
+	color: #5f3436;
+}
+/*//////////////////
+Header
+//////////////////*/
+
+/*.class{
+		box
+		...
+		...
+		...
+		texte
+		...
+		autre
+		...
+}*/
+
+/*///////// homepage /////////*/
+
+html, .homepage, .homepage header{
+	height: 100%;
+}
+.homepage{
+	padding: 1px 0;
+}
+.homepage header{
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+}
+.head-vid{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	min-height: 100%;
+	min-width: 100%;
+}
+.social a{
+	font-size: 35px;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.homepage header div, header .social{
+	position: absolute;
+}
+.homepage header a{
+	position: relative;
+}
+.homepage header nav{
+	top: 30px;
+	right: 30px;
+}
+.homepage header div{
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	text-align: center;
+}
+.homepage header div a{
+	display: inline-block;
+	background: url('../img/sprite.png');
+	height: 45px;
+	width: 45px;
+}
+.txt-logo{
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+	line-height: 49px;
+	margin: 0;
+}
+.head-title{
+	font-family: 'Oswald', sans-serif;
+	font-size: 86px;
+	line-height: 126px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+/*//////////////////
+Nav
+//////////////////*/
+
+.menu > ul > li + li::before{
+	content: '';
+	height: 14px;
+	width: 2px;
+	background: url(../img/sprite.png) -50px 0;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.homepage .menu{
+	margin-top: 100vh;
+}
+.menu{
+	width: 100%;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	position: relative;
+	background: #fff;
+}
+.menu::after{
+	content: '';
+	height: 2px;
+	width: 100%;
+	display: block;
+	background: url(../img/sep-header.png) repeat-x;
+}
+.menu ul{
+	padding: 0;
+}
+.menu > ul > li{
+	display: inline-block;
+	vertical-align: middle;
+	width: 150px;
+	position: relative;
+}
+.menu .nav-logo{
+	width: 200px;
+}
+.menu a{
+	text-decoration: none;
+	color: #5f3436;
+	text-transform: uppercase;
+}
+.menu a:hover{
+	color: #dc5f13;
+}
+.menu ul li ul::before{
+	content: '';
+	position: absolute;
+	top:-84px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 84px;
+	width: 100px;
+	display: block;
+}
+.menu ul li ul{
+	display: none;
+	position: absolute;
+	border: 1px solid #5f3436;
+	top: 100px;
+	left: -60px;
+	width: 280px;
+	padding: 5px 22px 12px 17px;
+	background: rgba(255,255,255,0.8);
+	z-index: 11;
+}
+.menu ul li ul li:first-child{
+	border-bottom: 1px solid #5f3436;
+}
+.menu ul li ul li{
+	list-style: none;
+	display: block;
+	text-align: left;
+	padding:20px 0;
+}
+.menu ul li:hover ul{
+	display: block;
+}
+.logo{
+	height: 140px;
+}
+/*//////////////////
+Main
+//////////////////*/
+main{
+	background: #fff;
+	position: relative;
+	z-index: 9;
+}
+.wrapper{
+	width: 1140px;
+	margin: 0 auto;
+}
+.img-center{
+	padding:30px 400px;
+}
+.home-title{
+	font-size: 57px;
+	line-height: 85px;
+	color: #502628;
+}
+.sub-title{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 19px;
+	font-style: italic;
+	line-height: 23px;
+	color: #502628;
+	text-align: center;
+}
+.sep-dot{
+	height: 60px;
+	position: relative;
+}
+.sep-dot::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	background: url(../img/sep-header.png) repeat-x;
+	height: 2px;
+}
+
+.intro-blocks{
+	padding: 80px 0;
+}
+.block{
+	padding-bottom: 80px;
+}
+.block > div{
+	width: 49%;
+}
+.block .txt,.vid{
+	display: inline-block;
+	vertical-align: top;
+}
+.vid video{
+	width: 550px;
+}
+.txt h2{
+	font-size: 40px;
+	line-height: 46px;
+}
+.txt p{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 17px;
+	line-height: 27px;
+	color: #5f3436;
+}
+.block-gauche .txt{
+	padding-right: 40px;
+}
+.block-droit .txt{
+	padding-left: 40px;
+}
+.txt div{
+	width: 100%;
+}
+/*///////// footer hp /////////*/
+
+.footer-hp{
+	background: #dc5f13;
+	padding: 80px 0 60px
+}
+	.footer-hp h2{
+		color: #fff;
+		font-family: 'Pacifico', cursive;
+		font-size: 44px;
+		line-height: 52px;
+	}
+	.footer-hp section{
+		width: 50%;
+		float: left;
+	}
+	.footer-hp >*::after{
+		clear: both;
+		display: block;
+
+		content: '';
+	}
+	.footer-hp img{
+		height: 290px;
+	}
+.shop img{
+	float: left;
+	margin-right: 100px;
+}
+/*//////////////////
+Footer
+//////////////////*/
+	footer{
+		position: relative;
+		z-index: 10;
+
+		background-color: #502628;
+		color: #fff;
+
+		text-align: center;
+	}
+	footer .wrapper{
+		padding: 60px 0;
+	}
+	footer .wrapper >*{
+		float: left;
+		width: 33.33%;
+	}
+	footer .wrapper::after{
+		content: '';
+		clear: both;
+		display: block;
+	}
+	footer a{
+		color: #fff;
+		text-decoration: none;
+	}
+	footer .wrapper > div+div{
+		background: url('../img/sep-footer.png') repeat-y left;
+	}
+	footer .wrapper > div{
+		height: 100px;
+	}
+	input[type="text"]{
+		border: 2px solid #fff;
+		border-radius: 2px;
+		background: transparent;
+		width: 152px;
+    	height: 48px;
+    	color:#fff;
+		text-align: center;
+		font-style: italic;
+	}
+	input[type="text"]::placeholder{
+		color:#fff;
+		text-align: center;
+		font-style: italic;
+	}
+	input[type="submit"]{
+		background: none;
+		border: none;
+		outline: none;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: 'Oswald', sans-serif;
+	}
+	footer .wrapper div:first-child a{
+		font-style: italic;
+	}
+
+/*///////// where are u /////////*/
+	.where-are-u{
+		background-image: url('../img/new-map-2x.jpg');
+		background-size: cover;
+		padding: 50px 0;
+
+		text-align: center;
+		height: 164px;
+
+		text-transform: uppercase;
+	}
+
+	.where-are-u a{
+		color: #fff;
+		line-height: 60px;
+		font-family: 'Oswald', sans-serif;
+		font-size: 17px;
+	}
+	.where-are-u a:hover{
+		color: #de6e1d;
+	}
+	.where-are-u a::before{
+		content: '';
+		display: inline-block;
+		width: 22px;
+		height: 32px;
+		vertical-align: middle;
+		background: url('../img/new-map-pointer.png');
+		margin-right: 20px;
+	}
+/*//////////////////////////////////////////////////////
+Boissons
+//////////////////////////////////////////////////////*/
+.header-boissons{
+	background: url('../img/cat_drink-1790x529.jpg');
+	background-size: cover;
+	height: 374px;
+	position: relative;
+	z-index: 10;
+}
+	.header-boissons::after{
+	content: '';
+	background: url('../img/badge-belgium.png');
+	height: 130px;
+	width: 132px;
+	position: absolute;
+	bottom: -65px;
+	left: 50%;
+	transform: translateX(-50%);
+	}
+/*///////// boisson /////////*/
+.main-boissons .wrapper::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.boissons-title{
+	font-size: 52px;
+	line-height: 60px;
+	color: #de6e1d;
+	padding: 120px 0 80px;
+}
+.boisson{
+	width: 30%;
+	text-align: center;
+	float: left;
+	margin: 0 0 80px 3.33%;
+	}
+	.boisson-img{
+		width: 70%;
+		border-radius: 50%;
+		filter:grayscale(100%);
+	}
+	.boisson-img:hover{
+		filter:grayscale(0);
+	}
+	.boisson h2{
+		font-size: 35px;
+		line-height: 42px;
+	}
+	.boisson h2::after{
+		content: '';
+		background: url('../img/sep-product.png') center bottom no-repeat;
+		height: 40px;
+		display: block;
+	}
+	.boisson p{
+		height: 80px;
+	}
+/*//////////////////////////////////////////////////////
+Contact
+//////////////////////////////////////////////////////*/
+.main-contact .wrapper::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.contact-info{
+	width: 43%;
+	height: 845px;
+	float: left;
+	border-right: 2px solid #502628;
+}
+.contact-form{
+	width: 57%;
+	height: 845px;
+	float: right;
+	padding-left: 80px;
+}
+	.contact-info div+div{
+		border-top: 2px solid #502628;
+	}
+	.contact-form >*{
+		display: block;
+		width: 100%;
+	}
+	.contact-form input, .contact-form textarea{
+		border: 1px solid #502628;
+	}
+	#btn-send{
+		background: #502628;
+	}
+		.uppercase{
+			text-transform: uppercase;
+		}
+		.orange{
+			color:#de6e1d;
+			text-decoration: none;
+		}
+		.orange:hover{
+			color:#de6e1d;
+			text-decoration: underline; 
+		}
